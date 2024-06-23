@@ -54,7 +54,7 @@ export default function Navbar(props: Props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        Technical Test
+        <Link href={"/"} style={{ textDecoration: 'none', color: '#fff' }}>Technical Test</Link>
       </Typography>
       <Divider />
       <List>
@@ -92,7 +92,7 @@ export default function Navbar(props: Props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
-            Technical Test
+            <Link href={"/"} style={{ textDecoration: 'none', color: '#fff' }}>Technical Test</Link>
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (

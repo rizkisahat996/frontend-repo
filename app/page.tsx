@@ -14,13 +14,10 @@ export default function Home() {
     <main className="pd-container">
       <Box>
         <Typography variant="h1">Welcome</Typography>
+        <UpdateButton />
         {userData && (
           <Typography>User Data: {JSON.stringify(userData)}</Typography>
         )}
-        {/* <UpdateButton />
-        {userData && (
-          <Typography>User Data: {JSON.stringify(userData)}</Typography>
-        )} */}
       </Box>
     </main>
   );
